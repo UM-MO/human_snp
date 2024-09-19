@@ -18,6 +18,11 @@ SLURM is optional.
    conda install -c bioconda nextflow
    ```
 ## Before running
+Download hg38 genome sequence into the folder "reference"
+```bash
+wget https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/hg38.fa.gz
+```
+        
 If the referene genomes donot have index, using a command below to generate their index files and to put them in the same directory before running the pipeline.
 ```bash
 bwa index <full path to your genome fasta file> 
